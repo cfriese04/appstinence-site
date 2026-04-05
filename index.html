@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appstinence — Think Before You Scroll</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23F5F0E8' width='100' height='100' rx='20'/><rect fill='%231A1A17' x='33' y='28' width='10' height='44' rx='3'/><rect fill='%231A1A17' x='57' y='28' width='10' height='44' rx='3'/></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #F5F0E8;
+            color: #1A1A17;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .logo-bar {
+            width: 8px;
+            height: 32px;
+            background: #1A1A17;
+            border-radius: 2px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #7A7670;
+            letter-spacing: 1px;
+            margin-bottom: 48px;
+        }
+
+        .pitch {
+            max-width: 480px;
+            font-size: 18px;
+            color: #1A1A17;
+            line-height: 1.8;
+            margin-bottom: 48px;
+        }
+
+        .pitch strong {
+            color: #D4A54A;
+            font-weight: normal;
+        }
+
+        .app-store-btn {
+            display: inline-block;
+            background: #1A1A17;
+            color: #F5F0E8;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: opacity 0.2s;
+        }
+
+        .app-store-btn:hover {
+            opacity: 0.85;
+        }
+
+        .price {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #7A7670;
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background: #DDD8CF;
+            margin: 80px auto;
+        }
+
+        .legal {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .legal h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .legal .updated {
+            font-size: 14px;
+            color: #7A7670;
+            margin-bottom: 32px;
+        }
+
+        .legal h3 {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            margin-top: 32px;
+            margin-bottom: 8px;
+        }
+
+        .legal p {
+            font-size: 15px;
+            color: #4A4A45;
+            margin-bottom: 16px;
+            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .legal .highlight {
+            font-size: 17px;
+            color: #1A1A17;
+            font-weight: 500;
+            font-family: Georgia, serif;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            font-size: 13px;
+            color: #B0AAA0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .footer a {
+            color: #7A7670;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 36px; letter-spacing: 4px; }
+            .pitch { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="logo">
+            <div class="logo-bar"></div>
+            <div class="logo-bar"></div>
+        </div>
+        <h1>Appstinence</h1>
+        <p class="tagline">Think Before You Scroll</p>
+        <p class="pitch">
+            You're addicted to your phone. So is everyone.
+            The difference is you're doing something about it.<br><br>
+            One honest message. Every time you open a distracting app.
+            Ignore it, and we check back at <strong>15 minutes</strong>.
+            Then <strong>30</strong>. Then <strong>60</strong>.<br><br>
+            The longer you scroll, the less nice we get.
+        </p>
+        <a href="https://apps.apple.com/app/appstinence/id6761311329" class="app-store-btn">Download on the App Store</a>
+        <p class="price">7-day free trial. Then $19.99 once. Forever. No subscription.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Privacy Policy -->
+    <section class="legal" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p class="updated">Last updated: April 2026</p>
+
+        <p class="highlight">The short version: We don't collect your data. Period.</p>
+
+        <h3>What data does Appstinence access?</h3>
+        <p>Appstinence uses Apple's Screen Time APIs to see which apps you open and how long you use them. This data is processed entirely on your device. It is never transmitted, uploaded, stored on any server, or shared with anyone — including us.</p>
+
+        <h3>What data do we collect?</h3>
+        <p>None. Appstinence has no servers, no accounts, no analytics, no tracking pixels, no third-party SDKs, and no advertising. We literally cannot see your data. We don't know who you are, what apps you use, or how often you use them.</p>
+
+        <h3>Data storage</h3>
+        <p>All data — including your screen time statistics, intervention history, streak counts, and preferences — is stored locally on your device in encrypted app storage. If you delete Appstinence, all data is permanently deleted. There is no cloud backup of your Appstinence data.</p>
+
+        <h3>Third-party services</h3>
+        <p>Appstinence contains no third-party analytics, advertising SDKs, crash reporting tools, or tracking of any kind. The only external service interaction is with Apple's StoreKit for processing purchases.</p>
+
+        <h3>Photos</h3>
+        <p>Appstinence can save a wallpaper image to your Photos library during setup. This is the only interaction with your photo library. We never read or access your existing photos.</p>
+
+        <h3>Purchases</h3>
+        <p>Appstinence offers a free trial period (7 or 14 days depending on setup completion). After the trial, basic features remain free. Appstinence Pro unlocks all features for a one-time purchase of $19.99. All purchases are handled by Apple through StoreKit. We never see your payment information.</p>
+
+        <h3>Children's privacy</h3>
+        <p>Appstinence does not collect data from any user of any age. The app can be used by individuals of all ages. We comply with COPPA and do not knowingly collect personal information from children under 13. If a parent or guardian has questions about their child's use of Appstinence, they can contact us at getappstinence@gmail.com.</p>
+
+        <h3>Your rights</h3>
+        <p>You can delete all Appstinence data at any time by deleting the app. Since we don't collect or store any data on our servers, there is nothing to request deletion of. You own your data because it never leaves your device.</p>
+
+        <h3>Changes</h3>
+        <p>If we make material changes to this policy, we will notify you through the app before the changes take effect. The latest version will always be available at this page.</p>
+
+        <h3>Contact</h3>
+        <p>For questions about this policy: getappstinence@gmail.com</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Terms of Service -->
+    <section class="legal" id="terms">
+        <h2>Terms of Service</h2>
+        <p class="updated">Last updated: April 2026</p>
+
+        <p>By using Appstinence, you agree to these terms.</p>
+
+        <h3>What Appstinence does</h3>
+        <p>Appstinence is designed to help you pause before opening distracting apps. It does not block, lock, or restrict access to any app. You always retain full control of your device.</p>
+
+        <h3>Free trial</h3>
+        <p>Appstinence offers a free trial period (7 or 14 days depending on setup completion). During the trial, all features are unlocked. After the trial, basic features remain free. Appstinence Pro unlocks all features for a one-time purchase of $19.99.</p>
+
+        <h3>Purchases</h3>
+        <p>Appstinence Pro is a one-time, non-consumable purchase. Once purchased, it is yours permanently. Refunds are handled by Apple through their standard refund process.</p>
+
+        <h3>Shortcuts dependency</h3>
+        <p>Opening interventions require manual setup of iOS Shortcuts Automations. This functionality depends on Apple's Shortcuts framework, which Appstinence does not control. Changes to iOS may affect how Shortcuts Automations behave.</p>
+
+        <h3>No guarantees</h3>
+        <p>Appstinence is a tool to encourage mindful phone usage. We do not guarantee any specific reduction in screen time or changes in behavior. This app is not a medical device and does not diagnose, treat, or cure any condition.</p>
+
+        <h3>Your responsibility</h3>
+        <p>You are responsible for setting up Shortcuts Automations and configuring the app. Appstinence relies on Apple's Screen Time APIs, which may behave differently across iOS versions and devices.</p>
+
+        <h3>Limitation of liability</h3>
+        <p>Appstinence is provided "as is." To the maximum extent permitted by law, we are not liable for any damages arising from your use of the app.</p>
+
+        <h3>Contact</h3>
+        <p>For questions: getappstinence@gmail.com</p>
+    </section>
+
+    <footer class="footer">
+        &copy; 2026 Appstinence &middot;
+        <a href="#privacy">Privacy</a> &middot;
+        <a href="#terms">Terms</a>
+    </footer>
+
+</body>
+</html>
